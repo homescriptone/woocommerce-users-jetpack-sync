@@ -13,8 +13,9 @@
  * Domain Path:       /languages
  */
 
-define('JETPACK_CRM_API_KEY', 'Put your jetpack crm api key');
-define('JETPACK_CRM_API_SECRET', 'Put your jetpack crm api secret key');
+define('WOO_UJC_JETPACK_CRM_API_KEY', 'Put your jetpack crm api key');
+define('WOO_UJC_JETPACK_CRM_API_SECRET', 'Put your jetpack crm api secret key');
+define('WOO_UJC_JETPACK_CRM_API_ENDPOINTS', 'Put your jetpack crm api endpoints');
 
 
 add_action("woocommerce_created_customer",'woo_ujc_add_new_users_to_sys' );
@@ -33,7 +34,7 @@ function woo_ujc_add_new_users_to_sys( $customer_id ){
 	$curl = curl_init();
 
     curl_setopt_array($curl, array(
-    CURLOPT_URL => get_site_url().'/zbs_api/create_customer?api_key='.JETPACK_CRM_API_KEY.'&api_secret='. JETPACK_CRM_API_SECRET,
+    CURLOPT_URL => WOO_UJC_JETPACK_CRM_API_ENDPOINTS.'/create_customer?api_key='.WOO_UJC_JETPACK_CRM_API_KEY.'&api_secret='. WOO_UJC_JETPACK_CRM_API_SECRET,
     CURLOPT_RETURNTRANSFER => true,
     CURLOPT_ENCODING => '',
     CURLOPT_MAXREDIRS => 10,
