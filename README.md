@@ -10,10 +10,11 @@ In order to use this plugin, you need first to install and activate the followin
 After installing those plugins, you need to create an API from JetPack CRM dashboard, to do so, you need to follow the following instructions : 
 - [Create an API in JetPack CRM and get credentials](https://kb.jetpackcrm.com/knowledge-base/jetpack-crm-api-key-and-api-secrets/)
 
-Once done, you'll get an **API KEY** and **API SECRET KEY**.  
+Once done, you'll get an **API_ENDPOINTS**, **API KEY** and **API SECRET KEY**.  
 Those keys will be used for the constants : 
-- **JETPACK_CRM_API_KEY** ,
-- **JETPACK_CRM_API_SECRET**
+- **WOO_UJC_JETPACK_CRM_API_KEY** ,
+- **WOO_UJC_JETPACK_CRM_API_SECRET**
+- **WOO_UJC_JETPACK_CRM_API_ENDPOINTS**
 
 
 ## Contributing to # 
